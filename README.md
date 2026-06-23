@@ -23,6 +23,11 @@ SQL practice scripts run against the **dvdrental** sample database on [Neon](htt
 | 🔍 `select-statement.sql` | `SELECT` · column aliases · string concat (`\|\|`) |
 | 🔃 `order-by.sql` | `ORDER BY` · `ASC` / `DESC` · sort by expression (`LENGTH`) |
 | 🧹 `filtering.sql` | `DISTINCT` · `DISTINCT ON` · `AND` · `IN` / `NOT IN` · `<>` · `BETWEEN` · DDL + inserts |
+| 🏷️ `table-aliases.sql` | Table aliases (`AS`) in `SELECT`, `JOIN`, and self-join |
+| 🔗 `inner-join.sql` | `INNER JOIN` across two and three tables (`customer` · `payment` · `staff`) |
+| ↖️ `left-join.sql` | `LEFT JOIN` · `USING` clause · `IS NOT NULL` filter (`film` · `inventory`) |
+| 🔁 `self-join.sql` | Self-join via `manager_id` self-reference · `FOREIGN KEY` · `ON DELETE CASCADE` |
+| 🤝 `join-tables.sql` | `INNER` / `LEFT` / `RIGHT` / `FULL OUTER` joins · anti-joins · `teams` + `players` schema |
 | 📦 `dvdrental.tar` | Sample database dump (restore target) |
 
 ---
