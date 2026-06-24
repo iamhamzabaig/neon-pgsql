@@ -34,3 +34,16 @@ GROUP BY
     full_name
 ORDER BY
     amount DESC;
+
+
+SELECT 
+    p.staff_id,
+    s.first_name || ' ' || s.last_name AS staff_name,
+    SUM(p.amount) AS total_sales
+FROM payment p
+LEFT JOIN staff s
+    ON p.staff_id = s.staff_id
+GROUP BY
+    p.staff_id,
+    s.first_name,
+    s.last_name;
